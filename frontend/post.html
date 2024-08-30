@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postbook</title>
+    <link rel="stylesheet" href="./post style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+</head>
+<body   onload= "checkLoggedInUser(); onload=showLoggedUserName()">
+    <div class="header">
+    <h1>Hello,<span id="logged-username">username</span></h1>
+   <!-- <button oneclick="logout()" class="Logoutbtn">Logout</button> -->
+   <button id="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+    <section id="add-post-container">
+<article>
+        <h2>Add New Post</h2>
+        <div>
+        <textarea name="" id="newpost-text"cols="30" rows="10" placeholder="Add post text"></textarea>
+        </div>
+        <div>
+
+            <input type="text" id="newpostimage"placeholder="Add post img url"/>
+        </div>
+        <div>
+            <button oneclick ="handleAddNewPost()"class="addpost-btn">Post</button>
+        </div>
+   </article>
+    </section>
+
+    <section id="post-container">
+        <div class="post">
+            <div class="post-header">
+
+                <div class="post-user-image">
+                    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk="alt="post-user-image">
+                    
+                </div>
+
+
+                <div class="post-username-time">
+                    <p class="post-username">username</p>
+<div class="posted-time">
+    <span>13</span>
+    <span>hours ago</span>
+
+</div>
+                </div>
+            </div>
+
+<div class="post-text">
+    <p class="post-text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, excepturi!</p>
+</div>
+<div class="post-image">
+    <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk=" alt="post-image"/>
+
+</div>
+<!--comments-->
+<div class="comments-holder">
+    <div class="comment">
+        <div class="comment-user-image">
+            <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk="alt="comment-user-image"/>
+        </div>
+
+<div class="comment-text-container">
+    <h4>commented username</h4>
+    <p class="commented-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quaerat quibusdam atque soluta iste sit voluptate doloribus blanditiis ratione eius, nulla ex, doloremque at? Est beatae quos adipisci dicta non.
+
+    </p>
+</div>
+    </div>
+    <div class="comments-holder">
+<div class="comment">
+    <div class="comment-user-image">
+        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk="alt="comment-user-image"/>
+    </div>
+
+<div class="comment-text-container">
+<h4>commented username</h4>
+<p class="commented-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quaerat quibusdam atque soluta iste sit voluptate doloribus blanditiis ratione eius, nulla ex, doloremque at? Est beatae quos adipisci dicta non.
+
+</p> 
+</div>
+
+    </div>
+</div>
+
+<!---new input field-->
+<div class="postcomments-holder">
+    <div class="post-comment-input-field-holder">
+        <input
+        type="text"
+        placeholder="POST YOUR COMMENT"
+        class="postcomment-field-holder"
+        id="postcomment-input-for-postId1"
+        />
+    </div>
+       
+<div class="comment-btn-holder">
+    <button id="comment-btn" class="postcomment-btn">comment</button>
+</div>
+
+    </div>
+
+
+    </section>
+    <script src="./js/utc/calculateTimeDifference.js"></script>
+    <script src="./js/fetchData.js"></script>
+
+
+   
+
+</body> 
+</html>

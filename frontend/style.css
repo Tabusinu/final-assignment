@@ -1,0 +1,46 @@
+*{
+font-family: "Matemasie", sans-serif;
+}
+
+.login-form{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.login-form h3{
+    text-align: center;
+    color: olivedrab;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+input[types="text"],input[types="password"]{
+    padding:10px;
+}
+
+.login-btn{
+    background-color: rgb(25, 160, 25);
+    color: white;
+    width: 15%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.error{
+    color: red;
+
+}
+.error h3{
+    text-align: center;
+}
+.hidden{
+    display: border;
+}

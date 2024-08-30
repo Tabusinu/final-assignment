@@ -1,0 +1,136 @@
+
+*{
+    font-family: "Matemasie", sans-serif;
+    }
+    
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+.Logoutbtn{
+    background-color: antiquewhite;
+    color: blue;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Logoutbtn:hover{
+    background-color: rgb(226, 154, 178);
+    cursor: pointer;
+}
+.addpost-btn{
+    width: 100px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+#add-post-container{
+    border: 2px solid black;
+    width: 90%;
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+#post-container{
+    width: 90%;
+    background-color: pink;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.post{
+    width: 60%;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+.post-header{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-user-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+}
+
+.post-username{
+    margin: 0;
+}
+.posted-time{
+    color: gray;
+    font-size: 12px;
+}
+
+.post-image{
+    display: flex;
+    justify-content: center;
+}
+.post-image img{
+    width: 50%;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+
+.comment{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-user-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.comment-text-container{
+    background-color: gray;
+    padding: 10px;
+    border-radius:8px;
+}
+.comment-text-container h4,
+p{
+    margin: 0;
+}
+.comment-text-container h4{
+    margin-bottom: 5px;
+}
+.postcomments-holder{
+    display: flex;
+    gap: 20%;
+    margin: 15px;
+}
+.postcomment-field-holder{
+    padding: 14px;
+    border: 1px solid rgb(183, 133, 133);
+    width: 100%;
+}
+.postcomment-btn{
+
+padding: 20Px;
+background-color: brown;
+color: white;
+border: none;
+
+
+}
+.post-comment-input-field-holder{
+    width: 60% ;
+
+}
+
